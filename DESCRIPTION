@@ -1,0 +1,16 @@
+Package: OLSLog
+Type: Package
+Title: OLS and Logistic Regressions for R
+Version: 1.0 
+Date: 2017-10-20
+Author: Johannes Besch [aut,cre], Marco Radojevic [aut,cre]
+Maintainer: Johannes Besch <besch@ipz.uzh.ch>
+	    Marco Radojevic <radojevic@ipz.uzh.ch>
+Description: Functions to calculate OLS and Logistic Regressions.
+License: GPL (>=2)
+Depends:
+    R (>= 3.1.0),
+Imports:
+    nnet
+URL: placeholder.com 
+RoxygenNote: 5.0.1
