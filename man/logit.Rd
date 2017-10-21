@@ -8,26 +8,23 @@
   The function estimates a logistic regression model through MLE. Method: Quasi-Newton 
 }
 \usage{
-  logit(fml, data)
+  logit(fml, dat)
 }
 
 \arguments{
   \item{fml}{
     Formula-object of the disired independent and dependent variables. E.g. as.formular("sex ~ rural + age")
   }
-  \item{data}{
+  \item{dat}{
     data frame which contains the variables specified in fml 
   }
  
 }
 \details{
-  Given the matrix of the dependent variabe Y and the matrix of the independent variables X, the function ols returns an estimate 
-  of the respective OLS-coefficients for each independent variable and the estimate of the intercept for the dependent variable.
-  Additionally, ols also returns common summary statistics for the model.
+ Estimates a logistic regression
 }
 \value{
-  The output is a k+1x6 matrix with the name of the estimated coefficients, estimate, standard error, t-value and p-value; 
-  and a summary of the residuals, residual standard error, degrees of freedom, multiple-R-squared and F-statistics
+  Output is logistic regression
 }
 
 \author{

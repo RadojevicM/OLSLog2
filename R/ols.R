@@ -1,5 +1,4 @@
 #Written by: Radojevic, Marco; Besch, Johannes
-rm(list=ls())
 ols <- function(X,Y,data){
   rownames <- as.matrix(colnames(data))
   beta.hat = solve(t(X) %*% X) %*% t(X) %*% Y
