@@ -13,7 +13,7 @@ logit <- function(fml,dat) {
   theta.ini <- rep(0,(dim(x)[2]))
   names(theta.ini) <- colnames(x)
   mle <- optim(theta.ini,loglik,x=x,y=y,hessian=T,method = "BFGS")
-  output <- list(beta=mle$par,vcov=solve(mle$hessian),ll=2*mle$value)
+  output <- list(beta=mle$par,s.e.=sqrt(diag(solve(mle$hessian))),ll=2*mle$value)
   return(output)
 }
 

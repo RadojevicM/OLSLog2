@@ -5,7 +5,7 @@
   Logistic Regression 
 }
 \description{
-  The function estimates a logistic regression model through MLE. Method: Quasi-Newton 
+  The function estimates a logistic regression model with the Maximum-Likelihood Method. 
 }
 \usage{
   logit(fml, dat)
@@ -13,18 +13,18 @@
 
 \arguments{
   \item{fml}{
-    Formula-object of the disired independent and dependent variables. E.g. as.formular("sex ~ rural + age")
+    Formula-object of the desired independent and dependent variables: formula.object <- as.formula("y ~ x1 + x2 + ... xn").
   }
   \item{dat}{
-    data frame which contains the variables specified in fml 
+    Data frame which contains the variables specified in the formula-object. 
   }
  
 }
 \details{
- Estimates a logistic regression
+ Estimates a logistic regression for a binary independent variable where the data generating process can be described with a Bernoulli-distribution. Parameters are maximised with the Maximum-Likelihood-Method using a Quasi-Newton-Algorithm.
 }
 \value{
-  Output is logistic regression
+  Output are the coefficient estimates of a logistic regression and its respective standard errors.
 }
 
 \author{
